@@ -21,6 +21,7 @@ The purpose of this learning log is to document consistent progress in IT Suppor
 | Day 09 | PowerShell Automation Script Review | [Day09_PowerShell_Automation_Script_Review.md](./Day09_PowerShell_Automation_Script_Review.md) |
 | Day 10 | Patch Management Troubleshooting | [Day10_Patch_Management_Troubleshooting.md](./Day10_Patch_Management_Troubleshooting.md) |
 | Day 11 | Main Portfolio README Update | [Day11_Main_Portfolio_README_Update.md](./Day11_Main_Portfolio_README_Update.md) |
+| Day 12 | PowerShell Automation Phase 1 | [Day12_PowerShell_Automation_Phase1.md](./Day12_PowerShell_Automation_Phase1.md) |
 
 ---
 
@@ -33,7 +34,9 @@ The purpose of this learning log is to document consistent progress in IT Suppor
 - Prompt Library Phase 1 completed
 - Prompt 001 to Prompt 010 completed
 - Main portfolio README improved
-- Daily learning logs documented from Day 01 to Day 11
+- PowerShell Automation Phase 1 started
+- First practical PowerShell system health check script created
+- Daily learning logs documented from Day 01 to Day 12
 
 ### Skills Being Developed
 
@@ -41,7 +44,7 @@ The purpose of this learning log is to document consistent progress in IT Suppor
 - System Administration thinking
 - AI-assisted IT operations
 - Prompt engineering for IT workflows
-- PowerShell automation planning
+- PowerShell automation
 - Markdown documentation
 - Git and GitHub version control
 - Professional portfolio building
