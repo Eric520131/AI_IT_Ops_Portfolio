@@ -15,6 +15,7 @@ The purpose of this prompt library is to build a practical AI knowledge system t
 | 005 | Server Health Check Assistant | Perform server health checks, review disk space, services, event logs, uptime, network, backup, and security status | Prompt_005_Server_Health_Check.md |
 | 006 | Network Troubleshooting Assistant | Troubleshoot internet, DNS, IP, gateway, ping, shared folder, VPN, firewall, and port connectivity issues | Prompt_006_Network_Troubleshooting.md |
 | 007 | Active Directory User Account Troubleshooting Assistant | Troubleshoot login issues, account lockout, password expiry, group membership, permissions, VPN, MFA, and AD user problems | Prompt_007_Active_Directory_User_Account_Troubleshooting.md |
+| 008 | IT Documentation Generator Assistant | Create incident reports, RCA notes, SOPs, user guides, health check reports, troubleshooting reports, and handover notes | Prompt_008_IT_Documentation_Generator.md |
 
 ## Prompt 001 - IT Incident Troubleshooting Assistant
 
@@ -72,13 +73,14 @@ A clear troubleshooting checklist, possible causes, and suggested actions.
 - Server health check
 - Network troubleshooting
 - Active Directory user account troubleshooting
+- IT documentation generation
 
 ## Future Prompt Ideas
 
-- IT Documentation Generator Prompt
 - PowerShell Automation Script Review Prompt
 - Patch Management Troubleshooting Prompt
 - Microsoft 365 User Support Prompt
 - VMware or Hyper-V Troubleshooting Prompt
 - Security Incident Initial Triage Prompt
 - Infrastructure Project Documentation Prompt
+- IT Interview Scenario Practice Prompt
