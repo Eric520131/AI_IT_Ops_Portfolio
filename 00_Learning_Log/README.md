@@ -22,6 +22,7 @@ The purpose of this learning log is to document consistent progress in IT Suppor
 | Day 10 | Patch Management Troubleshooting | [Day10_Patch_Management_Troubleshooting.md](./Day10_Patch_Management_Troubleshooting.md) |
 | Day 11 | Main Portfolio README Update | [Day11_Main_Portfolio_README_Update.md](./Day11_Main_Portfolio_README_Update.md) |
 | Day 12 | PowerShell Automation Phase 1 | [Day12_PowerShell_Automation_Phase1.md](./Day12_PowerShell_Automation_Phase1.md) |
+| Day 13 | Disk Space Report PowerShell Script | [Day13_Disk_Space_Report_PowerShell.md](./Day13_Disk_Space_Report_PowerShell.md) |
 
 ---
 
@@ -36,7 +37,8 @@ The purpose of this learning log is to document consistent progress in IT Suppor
 - Main portfolio README improved
 - PowerShell Automation Phase 1 started
 - First practical PowerShell system health check script created
-- Daily learning logs documented from Day 01 to Day 12
+- Second practical PowerShell disk space report script created
+- Daily learning logs documented from Day 01 to Day 13
 
 ### Skills Being Developed
 
@@ -45,6 +47,8 @@ The purpose of this learning log is to document consistent progress in IT Suppor
 - AI-assisted IT operations
 - Prompt engineering for IT workflows
 - PowerShell automation
+- Disk space reporting
+- Threshold-based monitoring logic
 - Markdown documentation
 - Git and GitHub version control
 - Professional portfolio building
