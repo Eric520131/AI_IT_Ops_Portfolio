@@ -1,192 +1,142 @@
-# \# PowerShell Automation
+# PowerShell Automation
 
-# 
+This folder contains PowerShell scripts and automation examples for IT Support, System Administration, and AI-assisted IT Operations.
 
-# This folder contains PowerShell scripts and automation examples for IT Support, System Administration, and AI-assisted IT Operations.
+The purpose of this folder is to build practical PowerShell automation skills that are useful in real IT environments, including system checks, troubleshooting, reporting, and administrative task support.
 
-# 
+---
 
-# The purpose of this folder is to build practical PowerShell automation skills that are useful in real IT environments, including system checks, troubleshooting, reporting, and administrative task support.
+## Script Index
 
-# 
+| No. | Script | Purpose |
+|---|---|---|
+| 01 | [01_System_Health_Check.ps1](./01_System_Health_Check.ps1) | Performs a basic Windows system health check |
+| 02 | [02_Disk_Space_Report.ps1](./02_Disk_Space_Report.ps1) | Checks fixed drive disk space and reports Healthy or Warning status |
 
-# \---
+---
 
-# 
+## 01 - System Health Check Script
 
-# \## Script Index
+### Script Name
 
-# 
+`01_System_Health_Check.ps1`
 
-# | No. | Script | Purpose |
+### Purpose
 
-# |---|---|---|
+This script collects basic Windows system health information for IT Support and System Administrator use.
 
-# | 01 | \[01\_System\_Health\_Check.ps1](./01\_System\_Health\_Check.ps1) | Performs a basic Windows system health check |
+It is designed as a read-only troubleshooting and reporting script.
 
-# 
+### What It Checks
 
-# \---
+- Computer and operating system information
+- System uptime
+- CPU information and current load
+- Memory usage
+- Disk space
+- Key Windows services
+- Recent system errors from the last 24 hours
 
-# 
+### Key Windows Services Checked
 
-# \## 01 - System Health Check Script
+- Windows Event Log
+- Windows Remote Management
+- Windows Update
+- Background Intelligent Transfer Service
+- Server service
+- Workstation service
+- Print Spooler
 
-# 
+### How to Run
 
-# \### Script Name
+From the root of the repository:
 
-# 
+    powershell.exe -ExecutionPolicy Bypass -File ".\03_PowerShell_Automation\01_System_Health_Check.ps1"
 
-# `01\_System\_Health\_Check.ps1`
+---
 
-# 
+## 02 - Disk Space Report Script
 
-# \### Purpose
+### Script Name
 
-# 
+`02_Disk_Space_Report.ps1`
 
-# This script collects basic Windows system health information for IT Support and System Administrator use.
+### Purpose
 
-# 
+This script checks local fixed disks and reports disk size, used space, free space, free space percentage, and health status.
 
-# It is designed as a read-only troubleshooting and reporting script.
+It is designed for IT Support and System Administrator use when checking whether a computer or server may be running low on disk space.
 
-# 
+### What It Checks
 
-# \### What It Checks
+- Local fixed drives
+- Total disk size
+- Used disk space
+- Free disk space
+- Free space percentage
+- Disk health status based on a warning threshold
 
-# 
+### Status Logic
 
-# \- Computer and operating system information
+By default, the script uses a 20 percent free space threshold.
 
-# \- System uptime
+- Healthy: free space is above the threshold
+- Warning: free space is less than or equal to the threshold
 
-# \- CPU information and current load
+### How to Run
 
-# \- Memory usage
+From the root of the repository:
 
-# \- Disk space
+    powershell.exe -ExecutionPolicy Bypass -File ".\03_PowerShell_Automation\02_Disk_Space_Report.ps1"
 
-# \- Key Windows services
+Run with a custom warning threshold:
 
-# \- Recent system errors from the last 24 hours
+    powershell.exe -ExecutionPolicy Bypass -File ".\03_PowerShell_Automation\02_Disk_Space_Report.ps1" -WarningThresholdPercent 15
 
-# 
+Run with CSV export:
 
-# \### Key Windows Services Checked
+    powershell.exe -ExecutionPolicy Bypass -File ".\03_PowerShell_Automation\02_Disk_Space_Report.ps1" -ExportCsv
 
-# 
+---
 
-# \- Windows Event Log
+## Safety Notes
 
-# \- Windows Remote Management
+These scripts are read-only by default.
 
-# \- Windows Update
+They do not:
 
-# \- Background Intelligent Transfer Service
+- Change system settings
+- Restart services
+- Delete files
+- Modify registry settings
+- Install or uninstall software
 
-# \- Server service
+The disk space report script only creates a CSV report if the `-ExportCsv` option is used.
 
-# \- Workstation service
+---
 
-# \- Print Spooler
+## Skills Practiced
 
-# 
+- PowerShell scripting
+- System information collection
+- Windows service checking
+- Disk and memory reporting
+- Event log review
+- Threshold-based reporting
+- CSV export logic
+- IT support troubleshooting workflow
+- Technical documentation
+- GitHub portfolio presentation
 
-# \---
+---
 
-# 
+## Future Automation Ideas
 
-# \## How to Run
+Planned future scripts may include:
 
-# 
-
-# From the root of the repository:
-
-# 
-
-# &#x20;   powershell.exe -ExecutionPolicy Bypass -File ".\\03\_PowerShell\_Automation\\01\_System\_Health\_Check.ps1"
-
-# 
-
-# \---
-
-# 
-
-# \## Safety Notes
-
-# 
-
-# This script is read-only.
-
-# 
-
-# It does not:
-
-# 
-
-# \- Change system settings
-
-# \- Restart services
-
-# \- Delete files
-
-# \- Modify registry settings
-
-# \- Install or uninstall software
-
-# 
-
-# \---
-
-# 
-
-# \## Skills Practiced
-
-# 
-
-# \- PowerShell scripting
-
-# \- System information collection
-
-# \- Windows service checking
-
-# \- Disk and memory reporting
-
-# \- Event log review
-
-# \- IT support troubleshooting workflow
-
-# \- Technical documentation
-
-# \- GitHub portfolio presentation
-
-# 
-
-# \---
-
-# 
-
-# \## Future Automation Ideas
-
-# 
-
-# Planned future scripts may include:
-
-# 
-
-# \- Disk space alert report
-
-# \- Windows service status report
-
-# \- Failed login event review
-
-# \- Patch status checker
-
-# \- User account troubleshooting helper
-
-# \- Basic server health report export to CSV
-
-# \- Automated IT support checklist generator
-
+- Windows service status report
+- Failed login event review
+- Patch status checker
+- User account troubleshooting helper
+- Basic server health report export to CSV
+- Automated IT support checklist generator
