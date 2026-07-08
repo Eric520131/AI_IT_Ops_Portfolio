@@ -10,6 +10,7 @@ The purpose of this prompt library is to build a practical AI knowledge system t
 |---|---|---|---|
 | 001 | IT Incident Troubleshooting Assistant | Analyze IT incidents, user issues, screenshots, logs, and error messages | README.md |
 | 002 | PowerShell Troubleshooting Assistant | Troubleshoot Windows, PowerShell, services, event logs, disk space, and system admin issues | Prompt_002_PowerShell_Troubleshooting.md |
+| 003 | Windows Event Log Analysis Assistant | Analyze Windows Event Logs, Event IDs, warnings, errors, update failures, and system events | Prompt_003_Windows_Event_Log_Analysis.md |
 
 ## Prompt 001 - IT Incident Troubleshooting Assistant
 
@@ -58,9 +59,14 @@ A clear troubleshooting checklist, possible causes, and suggested actions.
 - GitHub portfolio building
 - Practical AI use for IT Support and System Administration
 
+## Current Prompt Categories
+
+- General IT incident troubleshooting
+- PowerShell troubleshooting
+- Windows Event Log analysis
+
 ## Future Prompt Ideas
 
-- Windows Event Log Analysis Prompt
 - Backup Failure Investigation Prompt
 - Server Health Check Prompt
 - Network Troubleshooting Prompt
