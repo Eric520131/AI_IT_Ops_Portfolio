@@ -251,3 +251,80 @@ This is useful for IT Support and System Administrator work because many real is
 ## Next Step
 
 Continue building the AI Prompt Library with a Server Health Check Prompt.
+
+---
+
+## Day 4 Additional Update - Backup Failure Investigation Prompt
+
+Today, I also created Prompt 004 for backup failure investigation.
+
+### Prompt 004 - Backup Failure Investigation Assistant
+
+This prompt helps investigate backup failures in IT support and system administration environments.
+
+It can be used to troubleshoot:
+
+- Windows Server Backup failures
+- Scheduled backup failures
+- Backup software errors
+- Failed backup jobs
+- Missing backup destination
+- Disk space issues
+- Permission issues
+- Network path issues
+- VSS or shadow copy problems
+- Backup service problems
+- Event log backup errors
+
+## Backup Troubleshooting Skills Practiced
+
+- Checking disk space
+- Checking Windows Event Logs
+- Checking VSS writers
+- Checking VSS providers
+- Checking shadow storage
+- Checking backup-related services
+- Checking scheduled tasks
+- Documenting backup failure root causes
+
+## Useful Commands Learned
+
+Check disk space:
+
+Get-PSDrive -PSProvider FileSystem
+
+Check recent system errors:
+
+Get-EventLog -LogName System -EntryType Error -Newest 30
+
+Check recent application errors:
+
+Get-EventLog -LogName Application -EntryType Error -Newest 30
+
+Check VSS writers:
+
+vssadmin list writers
+
+Check VSS providers:
+
+vssadmin list providers
+
+Check VSS shadow storage:
+
+vssadmin list shadowstorage
+
+Check backup-related services:
+
+Get-Service | Where-Object {$_.Name -like "*vss*" -or $_.DisplayName -like "*backup*"}
+
+Check backup-related scheduled tasks:
+
+Get-ScheduledTask | Where-Object {$_.TaskName -like "*backup*" -or $_.TaskPath -like "*backup*"}
+
+## Reflection
+
+Backup failure investigation is an important IT Support and System Administrator skill.
+
+A failed backup should be handled carefully because backup data is critical for recovery.
+
+This prompt helps me troubleshoot backup failures step by step instead of guessing the cause.
