@@ -12,6 +12,7 @@ The purpose of this prompt library is to build a practical AI knowledge system t
 | 002 | PowerShell Troubleshooting Assistant | Troubleshoot Windows, PowerShell, services, event logs, disk space, and system admin issues | Prompt_002_PowerShell_Troubleshooting.md |
 | 003 | Windows Event Log Analysis Assistant | Analyze Windows Event Logs, Event IDs, warnings, errors, update failures, and system events | Prompt_003_Windows_Event_Log_Analysis.md |
 | 004 | Backup Failure Investigation Assistant | Investigate backup failures, VSS issues, disk space, backup services, scheduled tasks, and backup logs | Prompt_004_Backup_Failure_Investigation.md |
+| 005 | Server Health Check Assistant | Perform server health checks, review disk space, services, event logs, uptime, network, backup, and security status | Prompt_005_Server_Health_Check.md |
 
 ## Prompt 001 - IT Incident Troubleshooting Assistant
 
@@ -66,13 +67,14 @@ A clear troubleshooting checklist, possible causes, and suggested actions.
 - PowerShell troubleshooting
 - Windows Event Log analysis
 - Backup failure investigation
+- Server health check
 
 ## Future Prompt Ideas
 
-- Server Health Check Prompt
 - Network Troubleshooting Prompt
 - Active Directory User Account Prompt
 - IT Documentation Generator Prompt
 - PowerShell Automation Script Review Prompt
 - Patch Management Troubleshooting Prompt
 - Microsoft 365 User Support Prompt
+- VMware or Hyper-V Troubleshooting Prompt
